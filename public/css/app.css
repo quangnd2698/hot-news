@@ -1,0 +1,30 @@
+.pointer {
+    cursor: pointer;
+}
+
+.page-title {
+    position: relative;
+    height: 39px;
+}
+
+.action-group {
+    position: absolute;
+    right: 0;
+}
+
+.form-filter {
+    display: flex;
+}
+
+.form-filter > div {
+    margin-right: 10px;
+}
+
+.form-filter > div:last-child {
+    margin-right: 0 !important;
+}
+
+.table-search-input {
+    min-width: 40%;
+}
+
