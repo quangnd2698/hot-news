@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('upload-image', 'Api\ImageController@store');
+Route::get('crawl-data', 'Api\CrawDataController@buildData');

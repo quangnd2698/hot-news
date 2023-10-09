@@ -5,3 +5,7 @@
 .news-detail-image img {
     width: 100%;
 }
+
+.items-by-category {
+    display: grid;
+}

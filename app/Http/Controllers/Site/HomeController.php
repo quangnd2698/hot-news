@@ -17,8 +17,7 @@ class HomeController extends Controller
             $trendings = $hotNews->slice(1,3);
             $rightTrendings = $hotNews->skip(4);
         }
-        $categories = Category::take(10)->get();
-        // dd($categories);
+        $categories = Category::take(7)->get();
         $allNewsByCategories = $this->getAllNewsByCategory();
         $allNewsByCategories = $this->getFirstCategory($allNewsByCategories);
         return view('site.home', compact('trendings', 'newsest', 'rightTrendings', 'categories', 'allNewsByCategories'));

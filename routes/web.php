@@ -13,8 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+dd($_SERVER);
 Route::get('/', [App\Http\Controllers\Site\HomeController::class, 'index'])->name('home');
 Route::get('news/{slug}', [App\Http\Controllers\Site\NewsController::class, 'show'])->name('category.detail');
+Route::get('/c-{slug}', [App\Http\Controllers\Site\CategoryController::class, 'show']);
 // Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

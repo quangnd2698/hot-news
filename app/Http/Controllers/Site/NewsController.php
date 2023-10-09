@@ -16,6 +16,9 @@ class NewsController extends Controller
                 $item->firstCategory = !empty($item->categories->first()->name) ? $item->categories->first()->name : '';
             }
         }
+        $news->update([
+            'view_count' => !empty($news->view_count) ? $news->view_count + 1 : 1
+        ]);
         return view('site.news-detail', compact('news', 'trendings'));
     }
 }

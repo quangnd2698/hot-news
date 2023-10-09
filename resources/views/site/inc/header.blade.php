@@ -35,6 +35,8 @@
                                     <a href="index.html"><img src="/site/assets/img/logo2.png" alt=""></a>
                                 </div>
                             <!-- Main-menu -->
+                            @if (0)
+                                
                             <div class="main-menu d-none d-md-block">
                                 <nav>                  
                                     <ul id="navigation">    
@@ -54,6 +56,8 @@
                                     </ul>
                                 </nav>
                             </div>
+                            @endif
+
                         </div>             
                         <div class="col-xl-2 col-lg-2 col-md-4">
                             <div class="header-right-btn f-right d-none d-lg-block">

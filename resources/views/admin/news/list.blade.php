@@ -5,6 +5,7 @@
             <th>Tiêu đề</th>
             <th>Danh mục</th>
             <th>Ngày đăng</th>
+            <th>Lượt view</th>
             <th>Thời gian cập nhật</th>
             <th style="width: 40px">Hành động</th>
         </tr>
@@ -17,6 +18,7 @@
                 @{{ item.categoryNames ? item.categoryNames : '' }}
             </td>
             <td>@{{ item.published_at ? item.published_at : '' }}</td>
+            <td>@{{ item.view_count  }}</td>
             <td>@{{ item.updated_at ? formatDate(item.updated_at) : '' }}</td>
             <td>
                 <span ng-click="editNews(item)" title="update" class="pointer">

@@ -21,6 +21,7 @@ class CreateNewsTable extends Migration
             $table->integer('author_id');
             $table->string('slug', 1000);
             $table->dateTime('published_at');
+            $table->string('image_url', 255);
             $table->timestamps();
         });
     }

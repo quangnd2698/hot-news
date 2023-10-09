@@ -2998,6 +2998,7 @@ hr {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    max-height: 100px;
 }
 
 .trand-right-single .trand-right-img img {
@@ -6770,10 +6771,14 @@ del {
 .single-what-news-title {
     font-size: 14px !important;
 }
+.what-img {
+    position: relative;
+}
 
 .single-what-news .what-img img {
     height: 60%;
-    object-fit: cover;
+    object-fit: contain;
+    max-height: 250px;
 }
 
 @media only screen and (max-width: 600px) {

@@ -11,7 +11,7 @@ class News extends BaseModel
     use HasFactory;
     protected $table = 'news';
     protected $fillable = [
-        'title', 'short_description', 'content', 'author_id', 'published_at', 'slug', 'image_url'
+        'title', 'short_description', 'content', 'author_id', 'published_at', 'slug', 'image_url', 'view_count'
     ];
 
     protected $searchColumn = 'title';

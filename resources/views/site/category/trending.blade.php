@@ -9,13 +9,10 @@
                     @if (!empty($newsest))
                         <div class="trending-top mb-30">
                             <div class="trend-top-img">
-                                <a href="{{ route('category.detail', ['slug' => $newsest->slug]) }}">
-                                <img src="{{ !empty($newsest->image_url) ? $newsest->image_url : '' }}" alt=""> </a>
+                                <img src="{{ !empty($newsest->image_url) ? $newsest->image_url : '' }}" alt="">
                                 <div class="trend-top-cap">
-                                    @if ($newsest->firstCategory)
-                                        <span>{{ $newsest->firstCategory }}</span>
-                                    @endif
-                                    <h2><a href="{{ route('category.detail', ['slug' => $newsest->slug]) }}">{{ $newsest->title }}</a>
+                                    <h2><a
+                                            href="{{ route('category.detail', ['slug' => $newsest->slug]) }}">{{ $newsest->title }}</a>
                                     </h2>
                                 </div>
                             </div>
@@ -33,8 +30,6 @@
                                                 <div class="trend-bottom-img">
                                                     <img src="{{ $item->image_url ? $item->image_url : '' }}"
                                                         alt="">
-                                                    <span
-                                                        class="color1">{{ $item->firstCategory ? $item->firstCategory : '' }}</span>
                                                 </div>
                                                 <div class="trend-bottom-cap pt-10">
 
@@ -59,8 +54,6 @@
                                         <img src="{{ $item->image_url ? $item->image_url : '' }}" alt="">
                                     </div>
                                     <div class="trand-right-cap">
-                                        <span
-                                            class="color1">{{ $item->firstCategory ? $item->firstCategory : '' }}</span>
                                         <h6>{{ $item->title ? $item->title : '' }}
                                         </h6>
                                     </div>
