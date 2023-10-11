@@ -32,7 +32,7 @@
                         <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
                             <!-- sticky -->
                                 <div class="sticky-logo">
-                                    <a href="index.html"><img src="/site/assets/img/logo2.png" alt=""></a>
+                                    <a href="/"><img src="/site/assets/img/logo2.png" alt=""></a>
                                 </div>
                             <!-- Main-menu -->
                             @if (0)
