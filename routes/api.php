@@ -18,5 +18,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+
 Route::post('upload-image', 'Api\ImageController@store');
 Route::get('crawl-data', 'Api\CrawDataController@buildData');
+Route::post('/crawl/store_news', 'Api\CrawDataController@storeNewsCrawl');

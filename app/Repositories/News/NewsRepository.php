@@ -102,4 +102,19 @@ class NewsRepository extends BaseRepository implements NewsRepositoryInterface {
         }
     }
 
+    public function getHotNews($filters) {
+        $query = News::with('categories');
+        if (!empty($filters['ignore_ids'])) {
+            $query->whereNotIn('news.id', $filters['ignore_ids']);
+        }
+
+        if (!empty($filters['category_id'])) {
+            $query->join('news_n_categories as nnc', 'nnc.news_id', '=', 'news.id')
+                ->where('nnc.category_id', $filters['category_id']);
+        }
+
+        $query->orderBy('view_count', 'DESC')->orderBy('published_at');
+        return $query->select('news.*')->limit(16)->get();
+    }
+
 }

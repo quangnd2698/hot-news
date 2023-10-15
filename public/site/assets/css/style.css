@@ -2972,7 +2972,7 @@ hr {
 }
 
 .trand-right-single {
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
     padding-bottom: 12px;
     border-bottom: 1px solid #eee
 }
@@ -3016,7 +3016,7 @@ hr {
     font-weight: 400;
     padding: 10px 15px;
     line-height: 1;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     display: inline-block
 }
 

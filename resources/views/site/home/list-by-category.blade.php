@@ -6,7 +6,7 @@
                     <div class="row d-flex justify-content-between">
                         <div class="col-lg-3 col-md-3">
                             <div class="section-tittle mb-30">
-                                <h3>Có gì mới</h3>
+                                <h3>Có gì hot</h3>
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-9">
@@ -19,7 +19,7 @@
                                             aria-selected="true">Tất cả</a>
                                         @foreach ($categories as $item)
                                             <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
-                                                href="{{ $item->slug }}" role="tab" aria-controls="nav-profile"
+                                                href="#{{ $item->slug }}" role="tab" aria-controls="nav-profile"
                                                 aria-selected="false">{{ $item->name }}</a>
                                         @endforeach
                                     </div>
@@ -60,6 +60,39 @@
                                         </div>
                                     </div>
                                 </div>
+                                @if (!empty($categories))
+                                    @foreach ($categories as $category)
+                                    <div class="tab-pane fade show" id="{{$category->slug}}" role="tabpanel"
+                                        aria-labelledby="nav-home-tab">
+                                        <div class="whats-news-caption">
+                                            <div class="row">
+                                                @if (!empty($category->news))
+                                                    @foreach ($category->news as $item)
+                                                    <div class="col-lg-3 col-md-3">
+                                                        <a href="{{ route('category.detail', ['slug' => $item->slug]) }}">
+                                                            <div class="single-what-news mb-2">
+                                                                <div class="what-img">
+                                                                    <img src="{{ !empty($item->image_url) ? $item->image_url : '' }}"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="trend-bottom-cap pt-10">
+
+                                                                    <h6>{{ $item->title ? $item->title : '' }}</h6>
+                                                                </div>
+                                                                {{-- <div class="what-cap">
+                                                            <span class="color1">{{$item->firstCategory ? $item->firstCategory : ''}}</span>
+                                                            <h6 class="single-what-news-title"><a href="{{$item->slug}}">{{$item->title ? $item->title : ''}}</a></h6>
+                                                        </div> --}}
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                @endforeach
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                @endif
                             <div>
                             <!-- End Nav Card -->
                         </div>

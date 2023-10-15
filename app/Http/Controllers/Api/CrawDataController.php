@@ -86,5 +86,21 @@ class CrawDataController extends Controller
 
     }
 
+    public function storeNewsCrawl(Request $request) {
+        if ($request->has('image_url')) {
+            $insertData = \DB::table('news_crawls')->insert($request->only([
+                'name',
+                'description',
+                'content',
+                'category_1',
+                'category_2',
+                'category_3',
+                'image_url',
+                'url'
+            ]));
+        }
+        return response()->json(['status' => 'success'], 200);
+    }
+
     
 }
