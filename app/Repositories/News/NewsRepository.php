@@ -113,7 +113,7 @@ class NewsRepository extends BaseRepository implements NewsRepositoryInterface {
                 ->where('nnc.category_id', $filters['category_id']);
         }
 
-        $query->orderBy('view_count', 'DESC')->orderBy('published_at');
+        $query->orderBy('published_at', 'DESC')->orderBy('view_count', 'DESC');
         return $query->select('news.*')->limit(16)->get();
     }
 
