@@ -9,3 +9,12 @@
 .items-by-category {
     display: grid;
 }
+
+.news-content {
+    position: relative;
+}
+
+.news-content img {
+    max-width: 100%;
+}
+

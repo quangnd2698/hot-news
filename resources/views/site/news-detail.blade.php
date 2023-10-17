@@ -1,4 +1,7 @@
-@extends('site.master')
+@extends('site.master', [
+    'metaTitle' => !empty($news->title) ? $news->title : '',
+    'metaDescription' => !empty($news->short_description) ? $news->short_description : ''
+])
 @section('style')
 @endsection
 @section('content')
@@ -7,7 +10,7 @@
             <!-- Hot Aimated News Tittle-->
             @include('site.common.treding-title')
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-8 news-content">
                     <!-- Trending Tittle -->
                     <div class="about-right mb-90">
                         <div class="section-tittle mb-30">
