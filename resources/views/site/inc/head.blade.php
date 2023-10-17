@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>{{!empty($metaTitle) ? $metaTitle : 'Tin nhanh - tin tức mới nhất trong ngày'}}</title>
+    <title>{{!empty($metaTitle) ? $metaTitle . '- Tin nhanh' : 'Tin nhanh - tin tức mới nhất trong ngày'}}</title>
     <meta name=”description” content="{{ !empty($metaDescription) ? $metaDescription : 'Tin nhanh nơi tổng hợp các tin tức mới nhất, chính xác nhất trong ngày. Đừng bỏ lỡ bất kỳ thông tin nào nhé' }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
