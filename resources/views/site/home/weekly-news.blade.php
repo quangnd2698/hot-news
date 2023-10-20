@@ -23,6 +23,9 @@
                                             <span
                                                 class="color1">{{ $item->firstCategory ? $item->firstCategory : '' }}</span>
                                             <h6>{{ $item->title ? $item->title : '' }}</h6>
+                                            <small class="news-short-description line-clamp-2">
+                                                {{ !empty($item->short_description) ? $item->short_description : '' }}
+                                            </small>
                                         </div>
                                     </div>
                                 </a>

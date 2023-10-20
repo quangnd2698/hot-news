@@ -18,3 +18,22 @@
     max-width: 100%;
 }
 
+.news-short-description {
+    color: #8f8f96;
+    font-style: italic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* line-height: 25px; */
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp-2 {
+    -webkit-line-clamp: 2 !important;
+}
+
+.text-white {
+    color: #ffffff !important;
+}
+
