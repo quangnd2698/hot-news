@@ -609,7 +609,7 @@ hr {
     animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
     -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
     /* background: #fff */
-    background: #FFCC00
+    background: #eee
 }
 
 .header-flex {
@@ -2650,7 +2650,7 @@ hr {
 .main-header {
     position: relative;
     z-index: 3;
-    background-color: #FFCC00;
+    background-color: #eee;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {

@@ -1,11 +1,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>{{!empty($metaTitle) ? $metaTitle . '- Tiêu điểm 365' : 'Tiêu điểm 365 - tin tức mới nhất trong ngày'}}</title>
+    <title>{{!empty($metaTitle) ? $metaTitle . '- Tiêu điểm 365' : 'Tiêu điểm 365 - Tin tức mới nhất trong ngày'}}</title>
     <meta name=”description” content="{{ !empty($metaDescription) ? $metaDescription : 'Tin nhanh nơi tổng hợp các tin tức mới nhất, chính xác nhất trong ngày. Đừng bỏ lỡ bất kỳ thông tin nào nhé' }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/site/assets/img/favicon.png">
+    
 
     <!-- CSS here -->
         <link rel="stylesheet" href="{{ asset('site/assets/css/bootstrap.min.css')}}">
