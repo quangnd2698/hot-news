@@ -10,7 +10,7 @@ class CrawDataController extends Controller
 {
     public function buildData()
     {
-        $items = \DB::table('news_crawls')->get();
+        $items = \DB::table('news_crawls')->orderBy('id', 'DESC')->get();
 
         if (!empty($items)) {
             foreach ($items as $item) {
