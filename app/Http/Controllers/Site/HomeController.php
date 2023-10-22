@@ -18,7 +18,7 @@ class HomeController extends Controller
     }
 
     public function index() {
-        $hotNews = News::with('categories')->orderBy('published_at', 'DESC')->limit(10)->get();
+        $hotNews = News::with('categories')->orderBy('published_at', 'DESC')->orderBy('id', 'DESC')->limit(10)->get();
         if (!empty($hotNews)) {
             $hotNews = $this->getFirstCategory($hotNews);
             $newsest = $hotNews->first();
