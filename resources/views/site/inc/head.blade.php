@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="/site/assets/img/favicon.png">
-    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2479266761406973"
+    crossorigin="anonymous"></script>
 
     <!-- CSS here -->
         <link rel="stylesheet" href="{{ asset('site/assets/css/bootstrap.min.css')}}">
