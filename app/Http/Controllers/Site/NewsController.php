@@ -20,7 +20,7 @@ class NewsController extends Controller
         $news->update([
             'view_count' => !empty($news->view_count) ? $news->view_count + 1 : 1
         ]);
-        try {
+        // try {
             NewsStatitics::create([
                 'news_id' => $news->id,
                 'created_at' => date('Y-m-d H:i:s'),
@@ -28,8 +28,8 @@ class NewsController extends Controller
                 'user_agent' => $_SERVER['HTTP_USER_AGENT'],
                 'source' => !empty($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : ''
             ]);
-        } catch (\Throwable $th) {
-        }
+        // } catch (\Throwable $th) {
+        // }
         
         return view('site.news-detail', compact('news', 'trendings'));
     }
