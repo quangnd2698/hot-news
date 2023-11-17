@@ -2973,7 +2973,7 @@ hr {
 
 .trand-right-single {
     /* margin-bottom: 12px; */
-    padding-bottom: 12px;
+    /* padding-bottom: 12px; */
     border-bottom: 1px solid #eee
 }
 
@@ -3054,7 +3054,7 @@ hr {
     .trending-tittle {
         padding-top: 25px;
         padding-bottom: 1px;
-        display: block
+        display: flex
     }
 }
 
@@ -3062,7 +3062,7 @@ hr {
     .trending-tittle {
         padding-top: 25px;
         padding-bottom: 1px;
-        display: block
+        display: flex
     }
 }
 

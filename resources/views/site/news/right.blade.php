@@ -7,7 +7,7 @@
     <div class="single-follow mb-45">
         @if (!empty($trendings))
             @foreach ($trendings as $item)
-                <a href="{{ route('category.detail', ['slug' => $item->slug]) }}">
+                <a href="{{ route('category.detail', ['slug' => $item->slug]) }}" class="mb-3">
                     <div class="trand-right-single d-grid">
                         <div class="trand-right-img">
                             <img src="{{ $item->image_url ? asset($item->image_url) : '' }}" alt="">
@@ -18,6 +18,7 @@
                         </div>
                     </div>
                 </a>
+                <div class="mt-2"></div>
             @endforeach
         @endif
 

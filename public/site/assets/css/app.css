@@ -37,3 +37,11 @@
     color: #ffffff !important;
 }
 
+.about-prea p {
+    font-size: 17px !important;
+}
+
+.single-follow > a {
+    margin-bottom: 10px;
+}
+
