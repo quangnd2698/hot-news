@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.tieudiem365.site">
+
+    <!-- Homepage -->
+    <url>
+        <loc>http://www.tieudiem365.site/</loc>
+        <lastmod>2023-11-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Categories -->
+    <url>
+        <loc>http://www.tieudiem365.site/c-xa-hoi</loc>
+        <lastmod>2023-11-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.tieudiem365.site/c-chinh-tri</loc>
+        <lastmod>2023-11-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.tieudiem365.site/c-the-thao</loc>
+        <lastmod>2023-11-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.tieudiem365.site/c-giao-duc</loc>
+        <lastmod>2023-11-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.tieudiem365.site/c-the-gioi</loc>
+        <lastmod>2023-11-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.tieudiem365.site/c-thoi-su</loc>
+        <lastmod>2023-11-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- Add more categories as needed -->
+
+    <!-- Individual Articles -->
+    <url>
+        <loc>http://tieudiem365.site/news/ba-bo-con-gap-nan-khi-danh-ca-tren-dap</loc>
+        <lastmod>2023-11-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>http://tieudiem365.site/news/chay-tiem-tap-hoa-hai-nguoi-tu-vong</loc>
+        <lastmod>2023-11-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <!-- Add more articles as needed -->
+</urlset>
