@@ -12,10 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::prefix('/')->middleware('site')->group(function () {
+    Route::get('/', [App\Http\Controllers\Site\HomeController::class, 'index'])->name('home');
+    Route::get('news/{slug}', [App\Http\Controllers\Site\NewsController::class, 'show'])->name('category.detail');
+    Route::get('/c-{slug}', [App\Http\Controllers\Site\CategoryController::class, 'show'])->name('category.index');
+});
 
-Route::get('/', [App\Http\Controllers\Site\HomeController::class, 'index'])->name('home');
-Route::get('news/{slug}', [App\Http\Controllers\Site\NewsController::class, 'show'])->name('category.detail');
-Route::get('/c-{slug}', [App\Http\Controllers\Site\CategoryController::class, 'show']);
 // Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

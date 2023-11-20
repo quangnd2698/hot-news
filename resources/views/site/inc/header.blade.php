@@ -35,23 +35,26 @@
                                     <a href="/"><img src="/site/assets/img/logo2.png" alt=""></a>
                                 </div>
                             <!-- Main-menu -->
-                            @if (0)
+                            @if (1)
                                 
                             <div class="main-menu d-none d-md-block">
                                 <nav>                  
-                                    <ul id="navigation">    
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="#">Category</a>
-                                            <ul class="submenu">
-                                                <li><a href="elements.html">Element</a></li>
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="single-blog.html">Blog Details</a></li>
-                                                <li><a href="details.html">Categori Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="latest_news.html">Latest News</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                    <ul id="navigation">
+                                        @if (!empty($headerCategories))
+                                            @foreach ($headerCategories as $item)
+                                                <li class="{{ (!empty($category) && $category->slug == $item->slug) ? 'active' : ''}}"><a href="{{route('category.index', [$item->slug])}}">{{$item->name}}</a></li>
+                                            @endforeach
+                                        @endif 
+                                        @if (0)
+                                            <li><a href="#">Category</a>
+                                                <ul class="submenu">
+                                                    <li><a href="elements.html">Element</a></li>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="single-blog.html">Blog Details</a></li>
+                                                    <li><a href="details.html">Categori Details</a></li>
+                                                </ul>
+                                            </li>
+                                        @endif
                                         
                                     </ul>
                                 </nav>

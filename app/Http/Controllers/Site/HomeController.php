@@ -8,7 +8,7 @@ use App\Models\News;
 use App\Repositories\News\NewsRepositoryInterface;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class HomeController extends BaseController
 {
 
     protected $newsRepo;
@@ -36,16 +36,5 @@ class HomeController extends Controller
         return view('site.home', compact('trendings', 'newsest', 'rightTrendings', 'categories', 'allNewsByCategories'));
     }
 
-    protected function getAllNewsByCategory() {
-        return News::with('categories')->orderBy('published_at', 'DESC')->skip(0)->limit(9)->get();
-    }
-
-    protected function getFirstCategory($items) {
-        foreach ($items as $item) {
-            if (!empty($item->categories)) {
-                $item->firstCategory = !empty($item->categories->first()->name) ? $item->categories->first()->name : '';
-            }
-        }
-        return $items;
-    }
+   
 }

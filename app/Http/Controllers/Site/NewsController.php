@@ -17,9 +17,9 @@ class NewsController extends Controller
                 $item->firstCategory = !empty($item->categories->first()->name) ? $item->categories->first()->name : '';
             }
         }
-        $news->update([
-            'view_count' => !empty($news->view_count) ? $news->view_count + 1 : 1
-        ]);
+        // $news->update([
+        //     'view_count' => !empty($news->view_count) ? $news->view_count + 1 : 1
+        // ]);
         try {
             if (!empty($_SERVER['HTTP_REFERER'])) {
                 NewsStatitics::create([

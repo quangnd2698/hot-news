@@ -3,7 +3,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{ !empty($metaTitle) ? $metaTitle . '- Tiêu điểm 365' : 'Tiêu điểm 365 - Tin tức mới nhất trong ngày' }}
     </title>
-    <meta name=”description”
+    <meta name="description"
         content="{{ !empty($metaDescription) ? $metaDescription : 'Tin nhanh nơi tổng hợp các tin tức mới nhất, chính xác nhất trong ngày. Đừng bỏ lỡ bất kỳ thông tin nào nhé' }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
