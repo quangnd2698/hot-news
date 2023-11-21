@@ -25,9 +25,6 @@
                 </div>
              </div>
             @endif
-            @if (!empty($news) && !empty($news->image_url))
-            <img src="{{$news->image_url}}" alt="" style="display: none">                
-            @endif
            <div class="header-bottom header-sticky">
                 <div class="container">
                     <div class="row align-items-center">
